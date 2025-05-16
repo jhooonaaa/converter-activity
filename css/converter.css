@@ -10,45 +10,48 @@ body {
     background: #fff;
     width: 350px;
     margin: 50px auto;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
 h1 {
     color: #ff85a2;
-    font-size: 24px;
+    font-size: 28px;
+    margin-bottom: 20px;
 }
 
-.display-container, .crypto-results {
-    margin: 15px 0;
-}
-
-label {
+.display-container label,
+.crypto-results label {
     font-size: 16px;
     color: #ff85a2;
+    text-align: left;
     display: block;
-    margin-bottom: 5px;
+    margin: 12px 0 5px 0;
 }
 
 .display {
-    width: 80%;
+    width: 90%;
     padding: 10px;
     border: 2px solid #ffb3c1;
-    border-radius: 8px;
-    text-align: center;
+    border-radius: 10px;
     font-size: 18px;
+    text-align: right;
+    background-color: #fff0f3;
+    color: #444;
 }
 
 .convert-btn {
     background-color: #ff85a2;
     color: white;
     border: none;
-    padding: 10px 15px;
+    margin: 20px 0;
+    padding: 12px 20px;
     font-size: 16px;
-    border-radius: 8px;
+    border-radius: 10px;
     cursor: pointer;
-    transition: 0.3s;
+    transition: background-color 0.3s;
+    width: 90%;
 }
 
 .convert-btn:hover {

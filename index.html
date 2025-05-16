@@ -5,30 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crypto Converter</title>
     <link rel="stylesheet" href="css/converter.css">
-    <script src="./js/convert.js"></script>
-    
+    <script src="./js/convert.js" defer></script>
 </head>
 <body>
-    <h1>Crypto Converter</h1>
-    <div class="Crypto">
+    <div class="converter-container">
+        <h1>Crypto Converter</h1>
         <div class="display-container">
-            <label for="amount">PHP:</label>
+            <label for="php">PHP:</label>
             <input type="text" id="php" class="display">
-            <br></br>
-            <button type="convert" class="convert-btn" onclick="converter()">Convert</button>
-            <br></br>
-            <label for="amount">XRP:</label>
-            <input type="text" id="xrp" class="display">
-            <br></br>
-            <label for="amount">USDT:</label>
-            <input type="text" id="usdt" class="display">
-            <br></br>
-            <label for="amount">DOGE:</label>
-            <input type="text" id="doge" class="display">
-            <br></br>
-            <label for="amount">TRX:</label>
-            <input type="text" id="trx" class="display">
 
+            <button class="convert-btn" onclick="converter()">Convert</button>
+
+            <div class="crypto-results">
+                <label for="xrp">XRP:</label>
+                <input type="text" id="xrp" class="display" readonly>
+
+                <label for="usdt">USDT:</label>
+                <input type="text" id="usdt" class="display" readonly>
+
+                <label for="doge">DOGE:</label>
+                <input type="text" id="doge" class="display" readonly>
+
+                <label for="trx">TRX:</label>
+                <input type="text" id="trx" class="display" readonly>
+            </div>
         </div>
+    </div>
 </body>
 </html>
